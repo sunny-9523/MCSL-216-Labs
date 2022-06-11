@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Payslip</title>
+<script type = "text/javascript">
+    function payslipcal()
+    {
+        var basicsalary,dearnessallowance,houserentallowance,generalprovidentfund,netpay,empname,empcode,post;
+        name = document.form1.empcode.value;
+        id = document.form1.empname.value;
+        post = document.form1.post.value;
+        basicsalary = parseInt(document.form1.basicsalary.value);
+		
+		
+        houserentallowance  = basicsalary * 0.25;
+        dearnessallowance = basicsalary * 0.35;
+        generalprovidentfund = basicsalary * 0.15;
+
+        netpay = (basicsalary+houserentallowance+dearnessallowance)-generalprovidentfund;
+		
+        document.form1.dearnessallowance.value = dearnessallowance;
+        document.form1.houserentallowance .value = houserentallowance ;
+        document.form1.generalprovidentfund.value = generalprovidentfund;
+        document.form1.netpay.value = netpay;
+    }
+</script>
+</head>
+<body >
+    <form name = "form1">
+        <table border = "0">
+            <tr>
+                <td>Employee code</td>
+                <td><input type = "text" name = "empcode"></td>
+            </tr>
+            <tr>
+                <td>Employee name</td>
+                <td><input type = "text" name = "empname"></td>
+            </tr>
+            <tr>
+                <td>Post</td>
+                <td><input type = "text" name = "post"></td>
+            </tr>
+            <tr>
+                <td>Basic Salary</td>
+                <td><input type = "text" name = "basicsalary"></td>
+            </tr>
+
+            <tr>
+                <td>Dearness Allowance </td>
+                <td><input type = "text" name = "dearnessallowance" readonly style="background-color: gray;"></td>
+            </tr>
+            <tr>
+                <td>House Rent Allowance </td>
+                <td><input type = "text" name = "houserentallowance" readonly style="background-color: gray;"></td>
+            </tr>
+            <tr>
+                <td>General Provident Fund</td>
+                <td><input type = "text" name = "generalprovidentfund" readonly style="background-color: gray;"></td>
+            </tr>
+            <tr>
+                <td>NetPay</td>
+                <td><input type = "text" name = "netpay" readonly style="background-color: gray;"></td>
+            </tr>  
+
+            <tr><td>
+                <input type = "button" value = "Calculate"onclick ="payslipcal()"></td>
+
+            </tr>			
+        </table>
+    </form>
+	
+	<br><br>
+<a href="home.html">Go to Main Page</a>
+</body>
+</html>

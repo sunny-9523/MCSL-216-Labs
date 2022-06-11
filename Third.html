@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>MCSL-216 Labs</title>
+	<style>
+	
+#green {
+color:white;
+background-color:green; 
+width:200px;
+}
+
+#red {
+color:white;
+background-color:red; 
+width:200px;
+}
+
+</style>
+	</head>
+<body>
+
+
+
+<script type = "text/javascript">  
+
+ var x = prompt("First subject marks obtained out of 100:");
+ var y = prompt("Second subject marks obtained out of 100:");
+ var z = prompt("Third subject marks obtained out of 100:");
+ var num1 = parseInt(x);
+ var num2 = parseInt(y);
+ var num3 = parseInt(z);
+
+  document.write("First Subject Marks:" +num1 +"<br>");
+  document.write("Second Subject Marks:" +num2 +"<br>");
+  document.write("Third Subject Marks:" +num3 +"<br><br>");
+ 
+ 
+ var sum=num1+num2+num3;
+ document.write("Marks Obtained :" +sum +"<br>");
+ document.write("Total Marks : 300" +"<br>" +"<br>");
+
+  var per  = (sum/(300.00))*100;
+  document.write("Percentage :" +per +"% <br>");
+
+
+
+
+
+if (per>=50)
+{
+  document.write("You have passed" +"<br>");
+}
+
+
+if (per>=90)
+{
+  document.write('<p id="green">Your Grade is A+</p>');
+}
+else if (per<=89 && per>=80)
+{
+  document.write('<p id="green">Your Grade is A</p>');
+}
+else if (per<=79 && per>=70)
+{
+  document.write('<p id="green">Your Grade is B+</p>');
+}
+else if (per<=69 && per>=60)
+{
+  document.write('<p id="green">Your Grade is B</p>');
+}
+else if (per<=59 && per>=50)
+{
+  document.write('<p id="green">Your Grade is C</p>');
+}
+else if (per<50)
+{
+  document.write('<p id="red">Your Grade is D or Fail</p>');
+}
+
+
+
+
+
+
+</script>
+
+
+<br><br>
+<a href="home.html">Go to Main Page</a>
+</body>
+</html>

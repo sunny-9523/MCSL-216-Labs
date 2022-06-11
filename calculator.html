@@ -1,0 +1,61 @@
+<html>
+	<head><title>Calculator</title></head>
+<body>
+	<script type="text/javascript">
+		function add()
+			{
+				f1.t3.value=eval(f1.t1.value)+eval(f1.t2.value);
+			}
+			
+		function sub()
+			{
+				f1.t3.value=eval(f1.t1.value)-eval(f1.t2.value);
+			}
+			
+		function mul()
+			{
+				f1.t3.value=eval(f1.t1.value)*eval(f1.t2.value);
+			}
+			
+		function div()
+			{
+				f1.t3.value=eval(f1.t1.value)/eval(f1.t2.value);
+			}
+	</script>
+<center>
+
+	<form name="f1">
+	<caption><h3> Calculator </h3></caption>
+	<table border=0>
+	
+		<tr>
+			<td>Enter First Number</td>
+			<td>:</td>
+			<td><input type="number" name="t1"></td>
+		<tr>
+
+		<tr>
+			<td>Enter Second Number</td>
+			<td>:</td>
+			<td><input type="number" name="t2"></td>
+		<tr>
+
+		<tr>
+			<td>Result</td>
+			<td>:</td>
+			<td><input type="number" name="t3" readonly style="background-color:"#FCF5D8;></td>
+		<tr>
+</table>	
+</center>	
+		<center>
+			 <input type="button" value="Add" OnClick="add()">
+			 <input type="button" value="Sub" OnClick="sub()">
+			 <input type="button" value="Mul" OnClick="mul()">
+			<input type="button" value="Div" OnClick="div()">
+			<input type="reset">
+		</center>
+	
+<br><br>
+<a href="home.html">Go to Main Page</a>
+</body>
+</html>

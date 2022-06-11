@@ -1,0 +1,10 @@
+<script type = "text/javascript">  
+
+document.write("<u>" +"My first JavaScript Program:" +"</u>" +"<br><br>");
+
+document.write("Welcome to JavaScript" +"<br>");
+document.write("Hello How are you !");
+alert("Have a Good Day !")
+
+
+</script>

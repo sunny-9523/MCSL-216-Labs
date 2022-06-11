@@ -1,0 +1,23 @@
+
+<html>
+	<head>
+		<title>Display text after entering data</title>
+	</head>
+<body>
+    <input type="text" id="fname">
+    <input type="text" id="lname">
+    <button type="button" onclick="getfullname();">Submit</button>
+    
+    <script>
+        function getfullname()
+		{
+			var inputVal = document.getElementById("fname").value;
+			var inputVal1 = document.getElementById("lname").value;
+			document.write("Hello&nbsp;" +inputVal +"&nbsp;"+inputVal1);
+	    }
+    </script>
+	
+<br><br>
+<a href="home.html">Go to Main Page</a>	
+</body>
+</html>

@@ -1,0 +1,29 @@
+<head>
+
+<script language="javascript">
+function updateBackgroundColour(selectElem) {
+  var i = selectElem.selectedIndex; // Get the selected option's index.
+  if (i < 0) {
+    return; // Nothing is selected.
+  }
+  // Set the background-color CSS attribute of the <body> element to 
+  // the value attribute of the selected option in our <select> element.
+  document.body.style.backgroundColor = selectElem.options[i].value;
+}
+</script>
+</head>
+
+<form>
+  Background color:
+  <!-- Note the onchange attribute. "this" refers to the changing element. -->
+  <select id="background" onchange="updateBackgroundColour(this)">
+    <option value="red">Red</option>
+    <option value="Green">Green</option>
+    <option value="blue">Blue</option>
+  </select>
+<form>
+<br><br>
+<a href="home.html">Go to Main Page</a>
+</body></html>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Digital Clock</title>
+	</head>
+<body>
+Digital Clock:
+<input type="text" id="clock" readonly>
+<br><br>
+
+<script language="javascript">
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  document.getElementById("clock").value = time;
+</script>
+
+<br><br>
+<a href="home.html">Go to Main Page</a>
+</body>
+</html>

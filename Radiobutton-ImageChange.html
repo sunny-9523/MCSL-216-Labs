@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+function preLoad() {
+  a1 = new Image; a1.src = 'helloworld.png' ;  
+  a2 = new Image; a2.src = 'goodmorning.png';  
+  a3 = new Image; a3.src = 'goodevening.png';  
+}
+function im(image) {
+  document.getElementById(image[0]).src = eval(image + ".src")
+}
+</script>
+</head>    
+
+<body onLoad="preLoad()">
+<form autocomplete="off">
+  <input type="radio" name="1" onClick="im('a1');" checked>
+  <input type="radio" name="1" onClick="im('a2');">
+  <input type="radio" name="1" onClick="im('a3');">
+</form>
+<img id="a" src="helloworld.png" width="100" height="100" alt="">
+
+<br><br>
+<a href="home.html">Go to Main Page</a>
+</body></html>
+</body>
+</html>
